@@ -1,0 +1,67 @@
+body {margin: 0;
+background-color: lightblue}
+
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #8CA6DB;
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul.topnav li a:hover {background-color: #111;}
+
+ul.topnav li.right {float: right;}
+
+@media screen and (max-width: 600px) {
+    ul.topnav li.right,
+    ul.topnav li {float: none;}
+}
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 10%;
+    background-color: black;color: white;
+    text-align: center;
+    opacity: 0.7;
+    font-size: 10px;
+}
+.monthPre{
+    color: gray;
+    text-align: center;
+}
+.monthNow{
+    color: blue;
+    text-align: center;
+}
+.dayNow{
+    border: 2px solid black;
+    color: blue;
+    text-align: center;
+}
+.calendar td{
+    htmlContent: 2px;
+    width: 40px;
+}
+.monthNow th{
+    background-color: #8CA6DB;
+    color: #FFFFFF;
+    text-align: center;
+}
+.dayNames{
+    background: blue;
+    color: #FFFFFF;
+    text-align: center;
+}
