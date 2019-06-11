@@ -67,7 +67,7 @@ for ( $day = 1; $day <= $day_count; $day++, $str++) {
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script type="text/javascript" src="script.js"></script>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
     <title>Kalender</title>
     <style>
 
@@ -76,9 +76,10 @@ for ( $day = 1; $day <= $day_count; $day++, $str++) {
 <body>
 
 <ul class="topnav">
-    <li><a class="active" href="#home">Home</a></li>
-    <li><a href="#calender">Kalender</a></li>
-    <li><a href="#contact">Contact</a></li>
+    <li><a class="active" href="home.php">Home</a></li>
+    <li><a href="kalender.php">Kalender</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="InlogRegister/login.php">Log in/uit</a></li>
 </ul>
 
 

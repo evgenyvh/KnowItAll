@@ -43,20 +43,30 @@ function result($conn, $TBname, $melding)
 <html lang="nl">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="style%20home.css">
+    <link rel="stylesheet" href="styles/style%20home.css">
+    <link rel="stylesheet" href="styles/style.css">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 </head>
 <header>
-    <div class="banner">Welkom bij het archief van KnowItAll</div>
+    <ul class="topnav">
+        <li><a class="active" href="home.php">Home</a></li>
+        <li><a href="kalender.php">Kalender</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="InlogRegister/login.php">Log in/uit</a></li>
+    </ul>
 </header>
 <body>
 
 
     <div class="homneweetje">
         <p class="weetjetext"><?=result($conn, $TBname, $melding)?></p>
+    </div>
+    <div class="footer">
+        <h2>KnowItAll</h2>
+        <h4>Copyright © 2019 KnowItAll Productions</h4>
     </div>
 </body>
 </html>
