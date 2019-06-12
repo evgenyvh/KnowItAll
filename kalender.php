@@ -76,7 +76,7 @@ for ( $day = 1; $day <= $day_count; $day++, $str++) {
 <body>
 
 <ul class="topnav">
-    <li><a class="active" href="home.php">Home</a></li>
+    <li><a class="active" href="index.php">Home</a></li>
     <li><a href="kalender.php">Kalender</a></li>
     <li><a href="contact.html">Contact</a></li>
     <li><a href="InlogRegister/login.php">Log in/uit</a></li>

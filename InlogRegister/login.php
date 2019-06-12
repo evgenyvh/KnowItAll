@@ -118,7 +118,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         </div>
         <p>Nog geen account? <a href="register.php">Maak hier een aan</a>.</p>
     </form>
-    <a href="../home.php" class="btn btn-primary">Terug naar home</a>
+    <a href="../index.php" class="btn btn-primary">Terug naar home</a>
 </div>
 </body>
 </html>

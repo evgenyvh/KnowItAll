@@ -22,7 +22,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 </div>
 <p>
     <a href="logout.php" class="btn btn-danger">Uitloggen</a>
-    <a href="../home.php" class="btn btn-danger">Naar de weetjes</a>
+    <a href="../index.php" class="btn btn-danger">Naar de weetjes</a>
 </p>
 </body>
 </html>

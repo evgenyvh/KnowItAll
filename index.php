@@ -1,9 +1,9 @@
 <?php
 
 $servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "niels";
+$username = "student4a8_510815";
+$password = "fErmwqvx2";
+$dbname = "student4a8_510815";
 $TBname = "weetje";
 $melding = null;
 
@@ -52,7 +52,7 @@ function result($conn, $TBname, $melding)
 </head>
 <header>
     <ul class="topnav">
-        <li><a class="active" href="home.php">Home</a></li>
+        <li><a class="active" href="index.php">Home</a></li>
         <li><a href="kalender.php">Kalender</a></li>
         <li><a href="contact.html">Contact</a></li>
         <li><a href="InlogRegister/login.php">Log in/uit</a></li>
