@@ -1,10 +1,10 @@
 <?php
 
 $servername = "localhost";
-$username = "student4a8_510815";
-$password = "fErmwqvx2";
-$dbname = "student4a8_510815";
-$TBname = "weetje";
+$username = "root";
+$password = "";
+$dbname = "project";
+$TBname = "project";
 $melding = null;
 
 

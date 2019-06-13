@@ -1,4 +1,5 @@
 <?php
+$bericht = "<script>alert('test');<\/script>";
 // Include config file
 require_once "config.php";
 
@@ -78,7 +79,13 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             // Attempt to execute the prepared statement
             if(mysqli_stmt_execute($stmt)){
                 // Redirect to login page
-                header("location: login.php");
+//                echo $bericht;
+                echo '
+                <script>
+                    alert("Het account is nu aangemaakt, u kunt nu inloggen.");
+                    window.location = "login.php"
+                </script>';
+//                header("location: login.php");
             } else{
                 echo "Oops! Iets ging er mis. Probeer het nogmaals.";
             }
