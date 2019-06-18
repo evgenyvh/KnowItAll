@@ -3,6 +3,7 @@
     text-align: center;
     border: solid black 1px;
     width: 80%;
+    hover: yellow;
 }
 html{
     background-color: lightblue;
@@ -25,4 +26,5 @@ html{
 }
 .nav{
     text-decoration: none;
+
 }
