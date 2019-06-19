@@ -11,9 +11,9 @@
 <body onload="startTime()">
 
 <ul class="topnav">
-    <li><a class="active" href="#home">Home</a></li>
-    <li><a href="#calender">Kalender</a></li>
-    <li><a href="#contact">Contact</a></li>
+    <li><a class="active" href="index.php">Home</a></li>
+    <li><a href="kalender.php">Kalender</a></li>
+    <li><a href="contact.html">Contact</a></li>
 </ul>
 <div class="container">
     <div class="card">
