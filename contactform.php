@@ -1,7 +1,4 @@
 <?php
-
-
-
 if (isset($_POST['submit'])){
     $name = $_POST['name'];
     $phone = $_POST['phone'];
@@ -20,16 +17,3 @@ if (isset($_POST['submit'])){
     header("Location: contact.html?mailsend");
 }
 ?>
-<html>
-<head>
-
-</head>
-<body>
-
-</body>
-
-
-
-
-
-</html>
