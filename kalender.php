@@ -1,7 +1,18 @@
 <?php
     include "kalender_functions.php";
-    if(isset($_POST["submit"])){
+
+
+
+
+    if(isset($_POST["fact"])){
+        $datum = $_POST["datum"];
+        $d = date_parse_from_format("Y-m-d", $datum);
+
+         echo fact($d);
     }
+
+
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -26,24 +37,24 @@
 <script>
     var datepicker = new Datepickk();
 </script>
+<form method="post" action=" ">
 <div class="container">
     <div class="row">
         <div class='col-lg-9'>
             <div class="form-group">
                 <label for="dtpickerdemo" class="col-sm-2 control-label">Select date</label>
                 <div class='col-sm-4 input-group date' id='dtpickerdemo'>
-                    <input type='text' class="form-control" id="seldate"/ >
+                    <input type='text' name="datum" class="form-control" id="seldate">
                     <span class="input-group-addon" >
                         <span class="glyphicon glyphicon-calendar" onclick="closeOnSelectDemo()"></span>
                     </span>
                 </div>
-                <form method="post" action=" ">
                     <input type="submit" name="fact" value="zoek weetje">
-                </form>
             </div>
         </div>
     </div>
 </div>
+</form>
 <script>
     function closeOnSelectDemo(){
         datepicker.unselectAll();
