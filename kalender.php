@@ -1,4 +1,8 @@
-
+<?php
+    include "kalender_functions.php";
+    if(isset($_POST["submit"])){
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -33,9 +37,11 @@
                         <span class="glyphicon glyphicon-calendar" onclick="closeOnSelectDemo()"></span>
                     </span>
                 </div>
+                <form method="post" action=" ">
+                    <input type="submit" name="fact" value="zoek weetje">
+                </form>
             </div>
         </div>
-
     </div>
 </div>
 <script>
