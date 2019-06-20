@@ -1,9 +1,11 @@
 <?php
 
+session_start();
 $servername = "localhost";
 $username = "root";
 $password = "";
 $dbname = "project";
+$dbname = "niels";
 $TBname = "weetje";
 $melding = null;
 
@@ -26,13 +28,13 @@ function result($conn, $TBname, $melding)
     if ($result->num_rows > 0) {
         // output data of each row
         while ($row = $result->fetch_assoc()) {
-            $melding = sprintf( "<div class='melding'>" . $row["datum"] ." ".  $row["weetje"] . "<br></div>");
+            $melding = sprintf( "<div class='melding'>" . $row["datum"] .": ".  $row["weetje"] . "<br></div>");
         }
     } else {
         $melding = sprintf( "<div class='melding'>0 results</div>");
     }
     $conn->close();
-            return $melding . $today;
+            return $melding;
 
 }
 
@@ -56,12 +58,14 @@ function result($conn, $TBname, $melding)
         <li><a href="kalender.php">Kalender</a></li>
         <li><a href="contact.html">Contact</a></li>
         <li><a href="InlogRegister/login.php">Log in/uit</a></li>
+        <li><a href="admin.php">Admin</a></li>
     </ul>
 </header>
 <body>
 
-
+    <p class="banner">Welkom op de website van KnowItAll</p>
     <div class="homneweetje">
+        <p class="weetjetext">Weetje van de dag</p>
         <p class="weetjetext"><?=result($conn, $TBname, $melding)?></p>
     </div>
     <div class="footer">
