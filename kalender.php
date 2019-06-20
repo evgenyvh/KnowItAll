@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
     <link href="styles/style.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="styles/datepickk.css">
-    <script src="distdatepickk.min.js"></script>
+    <script src="distdatepickk.js"></script>
 </head>
 <body>
 
