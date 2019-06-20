@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
     <title>PHP Calendar</title>
     <link href="styles/style.css" rel="stylesheet" type="text/css" />
-    
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
     <script src="script.js"></script>
 </head>
 <body onload="startTime()">
@@ -15,7 +15,7 @@
     <li><a class="active" href="index.php">Home</a></li>
     <li><a href="kalender.php">Kalender</a></li>
     <li><a href="contact.html">Contact</a></li>
-    <li><a href="InlogRegister/login.php">Log in/uit</a></li>
+    <li><a href="Inlog Register/login.php">Log in/uit</a></li>
     <li><a href="admin.php">Admin</a></li>
 </ul>
 <script>
