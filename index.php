@@ -5,7 +5,6 @@ $servername = "localhost";
 $username = "root";
 $password = "";
 $dbname = "project";
-$dbname = "niels";
 $TBname = "weetje";
 $melding = null;
 
