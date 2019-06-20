@@ -7,10 +7,10 @@
     <title>PHP Calendar</title>
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
     <link href="styles/style.css" rel="stylesheet" type="text/css" />
-
-    <script src="script.js"></script>
+    <link rel="stylesheet" href="styles/datepickk.css">
+    <script src="distdatepickk.min.js"></script>
 </head>
-<body onload="startTime()">
+<body>
 
 <ul class="topnav">
     <li><a class="active" href="index.php">Home</a></li>
