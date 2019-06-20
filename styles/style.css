@@ -128,9 +128,8 @@ body{
 }
 .date{
     height:100%;
-    width:130px;
+    width:200px;
     float:left;
-    background-color: #8CA6DB;
     border-radius:0 6px 6px 0;
     text-align:right;
     padding:10px 30px;
@@ -221,4 +220,7 @@ body{
     border-left:solid red 5px;
     background-color:red;
     transform:translatez(-60px) scale();
+}
+.col-sm-2 {
+    width: auto;
 }
