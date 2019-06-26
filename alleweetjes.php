@@ -7,8 +7,10 @@
  */
 session_start();
 if (isset($_SESSION["admin"]) && $_SESSION["admin"] === 1){
-    $meldingadmin = sprintf( "<div style='position: absolute; left: 5px; border: solid 1px black; background-color: antiquewhite; margin: 3px; padding: 5px;'>u bent een admin</div>");
-}else{
+    $meldingadmin = sprintf( "<div style='position: absolute; right: 10px; border: solid 1px black; background-color: antiquewhite; margin: 8px; padding: 5px;'>u bent een admin</div>");
+}
+
+else{
     header("location: login.php");
 }
 
@@ -17,7 +19,7 @@ if (isset($_SESSION["admin"]) && $_SESSION["admin"] === 1){
 
 
 
-$meldingadmin = null;
+
 
 
 
@@ -73,6 +75,7 @@ if ($result-> num_rows > 0) {
         <li><a href="InlogRegister/login.php">Log in/uit</a></li>
         <li class="adminlink"><a href="admin.php">Admin</a></li>
         <li class="adminlink"><a href="alleweetjes.php">alle weetjes</a></li>
+        <?=$meldingadmin?>
     </ul>
 </header>
 <body>
