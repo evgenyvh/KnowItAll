@@ -45,10 +45,10 @@ function result($conn, $TBname, $melding)
             $melding = sprintf( "<div class='melding'>" . $row["datum"] .": ".  $row["weetje"] . "<br></div>");
         }
     } else {
-        $melding = sprintf( "<div class='melding'>0 results</div>");
-    }
-    $conn->close();
-            return $melding;
+    $melding = sprintf( "<div class='melding'>0 results</div>");
+}
+$conn->close();
+return $melding;
 
 }
 
