@@ -7,6 +7,22 @@ $password = "";
 $dbname = "niels";
 $TBname = "weetje";
 $melding = null;
+$admin = false;
+$meldingadmin = null;
+
+
+
+if (isset($_SESSION["admin"]) && $_SESSION["admin"] === 1){
+
+    $admin = true;
+    $meldingadmin = sprintf( "<div style='position: absolute; right: 10px; border: solid 1px black; background-color: antiquewhite; margin: 8px; padding: 5px;'>u bent een admin</div>");
+} else {
+    echo '<style type ="text/css">
+               .adminlink{
+               display: none;
+               }
+               </style>';
+}
 
 
 // Create connection
@@ -20,7 +36,7 @@ if ($conn->connect_error) {
 function result($conn, $TBname, $melding)
 {
 
-    $today = date("m/d");
+
 
     $sql = "SELECT * FROM `$TBname` WHERE MONTH(datum) = MONTH(CURRENT_DATE()) AND DAY(datum) = DAY(CURRENT_DATE()) ";
     $result = $conn->query($sql);
@@ -57,7 +73,9 @@ function result($conn, $TBname, $melding)
         <li><a href="kalender.php">Kalender</a></li>
         <li><a href="contact.html">Contact</a></li>
         <li><a href="InlogRegister/login.php">Log in/uit</a></li>
-        <li><a href="admin.php">Admin</a></li>
+        <li class="adminlink"><a href="admin.php">Admin</a></li>
+        <li class="adminlink"><a href="alleweetjes.php">alle weetjes</a></li>
+        <?=$meldingadmin?>
     </ul>
 </header>
 <body>
