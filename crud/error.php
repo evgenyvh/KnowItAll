@@ -17,10 +17,10 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="page-header">
-                        <h1>Invalid Request</h1>
+                        <h1>Het ging fout</h1>
                     </div>
                     <div class="alert alert-danger fade in">
-                        <p>Sorry, you've made an invalid request. Please <a href="index.php" class="alert-link">go back</a> and try again.</p>
+                        <p>Helaas, er ging iets mis. Ga naar <a href="index.php" class="alert-link">home</a> en probeer het later opniuew.</p>
                     </div>
                 </div>
             </div>        

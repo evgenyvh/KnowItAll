@@ -14,7 +14,7 @@ if(isset($_POST["id"]) && !empty($_POST["id"])){
     // Validate name
     $input_name = trim($_POST["name"]);
     if(empty($input_name)){
-        $name_err = "Please enter a name.";
+        $name_err = "Voeg hier een geldige weetje in.";
     } else{
         $name = $input_name;
     }
@@ -38,7 +38,7 @@ if(isset($_POST["id"]) && !empty($_POST["id"])){
                 header("location: index.php");
                 exit();
             } else{
-                echo "Something went wrong. Please try again later.";
+                echo "Er ging iets mis. Probeer het later opnieuw.";
             }
         }
          echo mysqli_error($link);
@@ -81,7 +81,7 @@ if(isset($_POST["id"]) && !empty($_POST["id"])){
                 }
                 
             } else{
-                echo "Oops! Something went wrong. Please try again later.";
+                echo "Oef! Er ging iets mis. Probeer het later nog maals.";
             }
         }
         
