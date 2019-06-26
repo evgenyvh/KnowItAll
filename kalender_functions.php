@@ -19,7 +19,6 @@ if ($conn->connect_error) {
         global $conn;
         $sql = "SELECT * FROM weetje WHERE MONTH(datum) = ". $d['month'] ." AND DAY(datum) = DAY(".$d['day'].")";
         $result = $conn->query($sql);
-//        var_dump($conn->error); die;
         if ($result->num_rows > 0) {
             // output data of each row
             while ($row = $result->fetch_assoc()) {

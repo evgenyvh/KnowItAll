@@ -7,8 +7,6 @@
     if(isset($_POST["fact"])){
         $datum = $_POST["datum"];
         $d = date_parse_from_format("Y-m-d", $datum);
-
-         echo fact($d);
     }
 
 

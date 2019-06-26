@@ -146,7 +146,7 @@
         <option value="$PROJECT_DIR$/InlogRegister/config.php" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/admin.php" />
-      </list>
+      <list/>
     </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP-xamp" />
@@ -160,7 +160,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-<<<<<<< HEAD
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -173,8 +172,6 @@
         </subPane>
       </pane>
       <pane id="ProjectPane" />
-=======
->>>>>>> e14f721d6c4d2aaee4c5d2fb856bbaae12a8c752
       <pane id="Scope" />
       <pane id="ProjectPane" />
     </panes>
