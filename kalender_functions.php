@@ -23,13 +23,11 @@ if ($conn->connect_error) {
             // output data of each row
             $melding = '';
             while ($row = $result->fetch_assoc()) {
-//                echo '123';
-                $melding .= sprintf( "<div class='melding'>" . $row["weetje"] . "<br></div>");
+                $melding .= sprintf( "<div class='melding'>" . $row["weetje"] . " " . $row["datum"] . "<br></div>");
             }
         } else {
             $melding = sprintf( "<div class='melding'>0 results</div>");
         }
         $conn->close();
         return $melding;
-
     }
