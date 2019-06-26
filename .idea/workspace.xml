@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bcc00ff1-6115-4d83-b2ec-1208f2dcfd05" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/crud/create.php" beforeDir="false" afterPath="$PROJECT_DIR$/crud/create.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crud/crud.php" beforeDir="false" afterPath="$PROJECT_DIR$/crud/crud.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crud/crud.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/crud/delete.php" beforeDir="false" afterPath="$PROJECT_DIR$/crud/delete.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crud/update.php" beforeDir="false" afterPath="$PROJECT_DIR$/crud/update.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,52 +21,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/crud/config.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="22" lean-forward="true" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/crud/create.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1552">
-              <caret line="105" column="40" selection-start-line="105" selection-start-column="40" selection-end-line="105" selection-end-column="40" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/crud/crud.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="409">
-              <caret line="112" column="1" lean-forward="true" selection-start-line="112" selection-start-column="1" selection-end-line="112" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/crud/delete.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
-              <caret line="72" column="49" selection-start-line="72" selection-start-column="49" selection-end-line="72" selection-end-column="49" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/crud/error.php">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/crud/update.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="99" column="42" selection-start-line="99" selection-start-column="42" selection-end-line="99" selection-end-column="42" />
+            <state relative-caret-position="621">
+              <caret line="171" column="7" selection-start-line="171" selection-start-column="7" selection-end-line="171" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -127,8 +89,8 @@
         <option value="$PROJECT_DIR$/../P4/Crud Test/welcome.php" />
         <option value="$PROJECT_DIR$/crud/crud.php" />
         <option value="$PROJECT_DIR$/crud/delete.php" />
-        <option value="$PROJECT_DIR$/crud/update.php" />
         <option value="$PROJECT_DIR$/crud/create.php" />
+        <option value="$PROJECT_DIR$/crud/update.php" />
       </list>
     </option>
   </component>
@@ -157,7 +119,7 @@
             <path>
               <item name="P4 Project" type="b2602c69:ProjectViewProjectNode" />
               <item name="P4 Project" type="462c0819:PsiDirectoryNode" />
-              <item name="InlogRegister" type="462c0819:PsiDirectoryNode" />
+              <item name="crud" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="P4 Project" type="b2602c69:ProjectViewProjectNode" />
@@ -218,16 +180,18 @@
       <workItem from="1560940366276" duration="40000" />
       <workItem from="1560940449062" duration="2441000" />
       <workItem from="1560943571134" duration="6474000" />
+      <workItem from="1561545839996" duration="696000" />
+      <workItem from="1561546548728" duration="31000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46108000" />
+    <option name="totallyTimeSpent" value="46835000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15369128" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15704697" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -401,13 +365,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../P4/Crud Test/create.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="75" column="24" selection-start-line="75" selection-start-column="24" selection-end-line="75" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../P4/Crud Test/create.php" />
     <entry file="file://$PROJECT_DIR$/../P4/Crud Test/delete.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1088">
@@ -425,13 +383,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../P4/Crud Test/welcome.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="44" column="37" lean-forward="true" selection-start-line="44" selection-start-column="37" selection-end-line="44" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../P4/Crud Test/welcome.php" />
     <entry file="file://$PROJECT_DIR$/../P4/Crud Test/update.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-229">
@@ -456,41 +408,35 @@
     <entry file="file://$PROJECT_DIR$/../P4/Crud Test/loguit.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/crud/crud.php">
+    <entry file="file://$PROJECT_DIR$/crud/config.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="409">
-          <caret line="112" column="1" lean-forward="true" selection-start-line="112" selection-start-column="1" selection-end-line="112" selection-end-column="1" />
+        <state relative-caret-position="68">
+          <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/crud/create.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="621">
+          <caret line="105" column="40" selection-start-line="105" selection-start-column="40" selection-end-line="105" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/crud/crud.php" />
+    <entry file="file://$PROJECT_DIR$/crud/delete.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="72" column="25" selection-start-line="72" selection-start-column="25" selection-end-line="72" selection-end-column="25" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/crud/error.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/crud/config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="22" lean-forward="true" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/crud/delete.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="72" column="49" selection-start-line="72" selection-start-column="49" selection-end-line="72" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/crud/update.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="99" column="42" selection-start-line="99" selection-start-column="42" selection-end-line="99" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/crud/create.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1552">
-          <caret line="105" column="40" selection-start-line="105" selection-start-column="40" selection-end-line="105" selection-end-column="40" />
+        <state relative-caret-position="621">
+          <caret line="171" column="7" selection-start-line="171" selection-start-column="7" selection-end-line="171" selection-end-column="7" />
         </state>
       </provider>
     </entry>

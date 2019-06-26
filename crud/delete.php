@@ -10,24 +10,29 @@ if(isset($_POST["id"]) && !empty($_POST["id"])){
     if($stmt = mysqli_prepare($link, $sql)){
         mysqli_stmt_bind_param($stmt, "i", $param_id);
         
-        // Set parameters
+        // Parameters worden gezet
         $param_id = trim($_POST["id"]);
         
         // Poging van het uitvoeren van prepared statement
         if(mysqli_stmt_execute($stmt)){
             // Item is verwijderd, word doorgestuurd naar home pagina.
-            header("location: crud.php");
+            echo '
+                <script>
+                    alert("Weetje is succesvol verwijderd.");
+                    window.location = "index.php"
+                </script>';
+            header("location: index.php");
             exit();
         } else{
-            echo "Oops! Something went wrong. Please try again later.";
+            echo "Oops! Er ging iets mis. Probeer het later nog maals.";
         }
     }
      
     // Afsluit van statement
-//    mysqli_stmt_close($stmt);
+    mysqli_stmt_close($stmt);
     
     // Connectie word afgesloten
-//    mysqli_close($link);
+    mysqli_close($link);
 } else{
     // ID parament word gevalideerd
     if(empty(trim($_GET["id"]))){
@@ -60,17 +65,11 @@ if(isset($_POST["id"]) && !empty($_POST["id"])){
                     </div>
                     <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
                         <div class="alert alert-danger fade in">
+                            <input type="hidden" name="id" value="<?php echo trim($_GET["id"]); ?>"/>
                             <p>Weet u het zeker dat u het will verwijderen?</p><br>
                             <p>
-                                <?php
-                                    if(isset($_GET['id'])) {
-                                        ?>
-                                        <input type="hidden" name="id" value="<?php echo $_GET['id'] ?>">
-                                        <?php
-                                    }
-                                ?>
                                 <input type="submit" value="Yes" class="btn btn-danger">
-                                <a href="crud.php" class="btn btn-default">No</a>
+                                <a href="index.php" class="btn btn-default">No</a>
                             </p>
                         </div>
                     </form>
