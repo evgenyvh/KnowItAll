@@ -17,12 +17,14 @@ if ($conn->connect_error) {
 }
     function fact($d){
         global $conn;
-        $sql = "SELECT * FROM weetje WHERE MONTH(datum) = ". $d['month'] ." AND DAY(datum) = DAY(".$d['day'].")";
+        $sql = "SELECT * FROM weetje WHERE MONTH(datum) = ". $d['month'] ." AND DAY(datum) = ".$d['day'];
         $result = $conn->query($sql);
         if ($result->num_rows > 0) {
             // output data of each row
+            $melding = '';
             while ($row = $result->fetch_assoc()) {
-                $melding = sprintf( "<div class='melding'>" . $row["weetje"] . "<br></div>");
+//                echo '123';
+                $melding .= sprintf( "<div class='melding'>" . $row["weetje"] . "<br></div>");
             }
         } else {
             $melding = sprintf( "<div class='melding'>0 results</div>");

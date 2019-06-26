@@ -4,10 +4,7 @@
 
 
 
-    if(isset($_POST["fact"])){
-        $datum = $_POST["datum"];
-        $d = date_parse_from_format("Y-m-d", $datum);
-    }
+
 
 
 
@@ -53,6 +50,14 @@
     </div>
 </div>
 </form>
+<?php
+
+if(isset($_POST["fact"])){
+    $datum = $_POST["datum"];
+    $d = date_parse_from_format("d-m-Y", $datum);
+    echo fact($d);
+}
+?>
 <script>
     function closeOnSelectDemo(){
         datepicker.unselectAll();
