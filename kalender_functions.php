@@ -7,7 +7,7 @@ $username = "root";
 $password = "";
 $dbname = "project";
 $TBname = "weetje";
-$melding = null;
+$meldingkalener = null;
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
@@ -21,13 +21,13 @@ if ($conn->connect_error) {
         $result = $conn->query($sql);
         if ($result->num_rows > 0) {
             // output data of each row
-            $melding = '';
+            $meldingkalender = '';
             while ($row = $result->fetch_assoc()) {
-                $melding .= sprintf( "<div class='melding'>" . $row["weetje"] . " " . $row["datum"] . "<br></div>");
+                $meldingkalender .= sprintf( "<div class='meldingkalender'>" . $row["weetje"] . " " . $row["datum"] . "<br></div>");
             }
         } else {
-            $melding = sprintf( "<div class='melding'>0 results</div>");
+            $meldingkalender = sprintf( "<div class='meldingkalender'>0 results</div>");
         }
         $conn->close();
-        return $melding;
+        return $meldingkalender;
     }

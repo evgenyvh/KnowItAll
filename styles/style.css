@@ -224,3 +224,7 @@ body{
 .col-sm-2 {
     width: auto;
 }
+.meldingkalender{
+    border: solid black 1px;
+    width: 15%;
+}
