@@ -11,7 +11,7 @@ if (isset($_SESSION["admin"]) && $_SESSION["admin"] === 1){
 }
 
 else{
-    header("location: login.php");
+    header("location: InlogRegister/login.php");
 }
 
 

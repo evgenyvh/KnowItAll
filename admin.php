@@ -6,13 +6,13 @@
  * Time: 11:21
  */
 session_start();
-if(isset($_SESSION['admin']) && $_SESSION['admin'] == 1) {
-    $melding = "u bent een admin en mag hier zijn";
-}else{
-    header('location: InlogRegister/login.php');
+if (isset($_SESSION["admin"]) && $_SESSION["admin"] === 1){
+    $meldingadmin = sprintf( "<div style='position: absolute; right: 10px; border: solid 1px black; background-color: antiquewhite; margin: 8px; padding: 5px;'>u bent een admin</div>");
 }
 
-
+else{
+    header("location: InlogRegister /login.php");
+}
 
 
 
@@ -38,6 +38,7 @@ if(isset($_SESSION['admin']) && $_SESSION['admin'] == 1) {
         <li><a href="InlogRegister/login.php">Log in/uit</a></li>
         <li><a href="admin.php">Admin</a></li>
         <li><a href="alleweetjes.php">alle weetjes</a></li>
+        <?=$meldingadmin?>
     </ul>
 </header>
 <body>
