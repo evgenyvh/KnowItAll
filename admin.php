@@ -35,7 +35,7 @@ else{
         <li><a class="active" href="index.php">Home</a></li>
         <li><a href="kalender.php">Kalender</a></li>
         <li><a href="contact.html">Contact</a></li>
-        <li><a href="InlogRegister/login.php">Log in/uit</a></li>
+        <li><a href="Inlog Register/login.php">Log in/uit</a></li>
         <li><a href="admin.php">Admin</a></li>
         <li><a href="alleweetjes.php">alle weetjes</a></li>
         <?=$meldingadmin?>

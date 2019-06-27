@@ -5,7 +5,7 @@
 $servername = "localhost";
 $username = "root";
 $password = "";
-$dbname = "niels";
+$dbname = "project";
 $TBname = "weetje";
 $meldingkalener = null;
 
@@ -23,7 +23,7 @@ if ($conn->connect_error) {
             // output data of each row
             $meldingkalender = '';
             while ($row = $result->fetch_assoc()) {
-                $meldingkalender .= sprintf( "<div class='meldingkalender'>" . $row["weetje"] . " " . $row["datum"] . "<br></div>");
+                $meldingkalender .= sprintf( "<br><div class='meldingkalender'>" . $row["weetje"] . " " . $row["datum"] . "<br></div>");
             }
         } else {
             $meldingkalender = sprintf( "<div class='meldingkalender'>0 results</div>");

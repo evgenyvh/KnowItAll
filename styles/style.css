@@ -232,6 +232,8 @@ body{
     width: auto;
 }
 .meldingkalender{
+    margin-top: 5px;
+    margin-left: 585px;
     border: solid black 1px;
     width: 15%;
 }

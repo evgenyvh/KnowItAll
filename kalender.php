@@ -56,7 +56,6 @@ $day_count = date('t', $timestamp);
     <li><a href="kalender.php">Kalender</a></li>
     <li><a href="contact.html">Contact</a></li>
     <li><a href="Inlog Register/login.php">Log in/uit</a></li>
-    <li><a href="admin.php">Admin</a></li>
 </ul>
 <script>
     var datepicker = new Datepickk();
@@ -66,7 +65,7 @@ $day_count = date('t', $timestamp);
     <div class="row">
         <div class='col-lg-9'>
             <div class="form-group">
-                <label for="dtpickerdemo" class="col-sm-2 control-label">Select date</label>
+                <H2>Kies een datum</H2>
                 <div class='col-sm-4 input-group date' id='dtpickerdemo'>
                     <input type='text' name="datum" class="form-control" id="seldate">
                     <span class="input-group-addon" >
@@ -75,6 +74,7 @@ $day_count = date('t', $timestamp);
                 </div>
                     <input type="submit" name="fact" value="zoek weetje">
             </div>
+
         </div>
     </div>
 </div>

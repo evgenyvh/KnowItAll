@@ -27,7 +27,7 @@ function all(){
     $servername = "localhost";
     $username = "root";
     $password = "";
-    $dbname = "niels";
+    $dbname = "project";
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
 // Check connection
@@ -65,15 +65,15 @@ if ($result-> num_rows > 0) {
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Home</title>
 </head>
 <header>
     <ul class="topnav">
         <li><a class="active" href="index.php">Home</a></li>
         <li><a href="kalender.php">Kalender</a></li>
         <li><a href="contact.html">Contact</a></li>
-        <li><a href="InlogRegister/login.php">Log in/uit</a></li>
-        <li class="adminlink"><a href="admin.php">Admin</a></li>
+        <li><a href="Inlog Register/login.php">Log in/uit</a></li>
+        <li class="adminlink"><a href="crud/index.php">Weetjes Beheer</a></li>
         <li class="adminlink"><a href="alleweetjes.php">alle weetjes</a></li>
         <?=$meldingadmin?>
     </ul>

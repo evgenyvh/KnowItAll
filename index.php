@@ -4,7 +4,7 @@ session_start();
 $servername = "localhost";
 $username = "root";
 $password = "";
-$dbname = "niels";
+$dbname = "project";
 $TBname = "weetje";
 $melding = null;
 $admin = false;
@@ -71,8 +71,8 @@ return $melding;
         <li><a class="active" href="index.php">Home</a></li>
         <li><a href="kalender.php">Kalender</a></li>
         <li><a href="contact.html">Contact</a></li>
-        <li><a href="InlogRegister/login.php">Log in/uit</a></li>
-        <li class="adminlink"><a href="admin.php">Admin</a></li>
+        <li><a href="Inlog Register/login.php">Log in/uit</a></li>
+        <li class="adminlink"><a href="crud/index.php">Weetjes beheren</a></li>
         <li class="adminlink"><a href="alleweetjes.php">alle weetjes</a></li>
         <?=$meldingadmin?>
     </ul>
